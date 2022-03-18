@@ -1,0 +1,100 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(img/piqsels.com-id-suqlt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.clock {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #fff;
+    border-radius: 50%;
+}
+
+.clock::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #2196f3;
+    z-index: 10000;
+    border-radius: 50%;
+}
+
+.hour, .min, .sec {
+    position: absolute;
+}
+
+.hour, .hr {
+    width: 200px;
+    height: 200px;
+}
+
+.min, .mn {
+    width: 230px;
+    height: 230px;
+}
+
+.sec, .sc {
+    width: 250px;
+    height: 250px;
+}
+
+.hr, .mn, .sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.hr, .mn, .sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.hr::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 100px;
+    background-color: #fff;
+}
+
+.hr::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 110px;
+    background-color: #fff;
+}
+
+.sc::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 120px;
+    background-color: #2196f3;
+}
+
+#digitalClock {
+    display: flex;
+    color: #fff;
+    font-size: 4em;
+    margin-top: 35px;
+}
