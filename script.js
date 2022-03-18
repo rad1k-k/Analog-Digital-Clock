@@ -20,7 +20,11 @@ setInterval(()=>{
     let h = new Date().getHours();
     let m = new Date().getMinutes();
     let s = new Date().getSeconds();
-    let am = "AM";
+    let am = " AM";
+        if(h > 12){
+        h = h - 12;
+        am = " PM"
+        }
 
     //add zero berofe single digit Numbers
     h = (h < 10) ? "0" + h : h

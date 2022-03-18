@@ -62,11 +62,6 @@ body {
     position: absolute;
 }
 
-.hr, .mn, .sc {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-}
 
 .hr::before {
     content: "";
@@ -76,7 +71,7 @@ body {
     background-color: #fff;
 }
 
-.hr::after {
+.mn::before {
     content: "";
     position: absolute;
     width: 4px;
